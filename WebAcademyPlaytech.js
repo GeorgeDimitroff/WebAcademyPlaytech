@@ -129,9 +129,9 @@ const addRobot = (ev)=>{
 	document.querySelector('form').reset(); // to clear the form for the next entry
 	ShowHidePhrase();
 
-	console.warn('added', {robots} );
-	let pre = document.querySelector("#msg pre");
-	pre.textContent = "\n" + JSON.stringify(robots, "\t", 2);
+	// console.warn('added', {robots} );
+	// let pre = document.querySelector("#msg pre");
+	// pre.textContent = "\n" + JSON.stringify(robots, "\t", 2);
 }
 
 // Show Robot Section of created Robots
