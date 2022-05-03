@@ -148,7 +148,6 @@ const showRobot = (ev)=>{
 
 	for(var i=0; i < robots.length; i++){
 		fillInRobotDetails(i);
-		i++;
 	}
 }
 
