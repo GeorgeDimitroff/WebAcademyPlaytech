@@ -57,53 +57,6 @@ p, img{
 	inset: -15px 35px 50%;
 }
 
-/* Robot text bubble */
-.talk-bubble {
-	margin: 40px;
-	display: block;
-	position: relative;
-	max-width: 200px;
-	height: auto;
-	left: 400px;
-	top: -30px;
-	border: 1px solid;
-	border-radius: 30px;
-	background-color: #FFF;
-}
-
-.bubble-bottom-left:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 30px;
-	right: auto;
-	top: auto;
-	bottom: -40px;
-	border: 20px solid;
-	border-color: #000 transparent transparent #000;
-}
-
-.bubble-bottom-left:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 31px;
-	right: auto;
-	top: auto;
-	bottom: -38px;
-	border: 20px solid;
-	border-color: #FFF transparent transparent #FFF;
-}
-
-.talk-bubble p{
-	padding: 10px;
-	text-align: center;
-	font-size: 20px;
-	line-height: 20px;
-}
-
 /* Flex container */
 .content-wrapper{
 	padding: 30px 50px 50px;
@@ -214,15 +167,7 @@ p, img{
 	transform: translate(-50%, 0%);
 }
 
-.robotEyes .eye-left{
-	height: 25px;
-	width: 25px;
-	border-radius: 50%;
-	border: 1px solid;
-	margin: 0 5px;
-}
-
-.robotEyes .eye-right{
+.robotEyes .eye{
 	height: 25px;
 	width: 25px;
 	border-radius: 50%;
@@ -257,14 +202,6 @@ p, img{
 	width: 100px;
 }
 
-.robotBody .female-body{
-	border-top:  130px solid #FFA500;
-	border-bottom: 100px solid #FFA500;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	width: 100px;
-}
-
 .robotBody .arm{
 	height: 150px;
 	width: 25px;
@@ -292,20 +229,19 @@ p, img{
 .robotName{
 	position: absolute;
 	font-size: 28px;
-	text-transform: uppercase;
 	left: 50%;
 	bottom: 10px;
 	transform: translate(-50%, 0%);
 }
 
 /* Robot talking animation */
-/*.mouth{
+.mouth{
 	transform-origin: left;
 	animation-name: mouth-animate;
 	animation-duration: 1s;
 	animation-timing-function: 1s ease-in-out;
 	animation-iteration-count: infinite;
-}*/
+}
 
 @keyframes mouth-animate {
 	0% {  transform: scaleX(1) translate(-50%, 0%); }
@@ -314,12 +250,12 @@ p, img{
 }
 
 /* Robot blinking animation */
-/*.eye-left {
+.eye {
 	animation-name: eyes-animate;
 	animation-duration: 3s;
 	animation-timing-function: 2s linear;
 	animation-iteration-count: infinite;
-}*/
+}
 
 @keyframes eyes-animate {
 	0% {  transform: scaleY(1); }
@@ -328,12 +264,12 @@ p, img{
 }
 
 /* Jump animation */
-/*.robot{
+.robot{
 	animation-name: jump-animate;
 	animation-duration: 2s;
 	animation-timing-function: 1s ease-out;
 	animation-iteration-count: infinite;
-}*/
+}
 
 @keyframes jump-animate {
 	0% { transform: translateY(0); }
